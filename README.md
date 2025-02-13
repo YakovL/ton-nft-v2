@@ -20,5 +20,5 @@
 
 This project is based on examples from the following repositories:
 
-- [TON Blockchain Token Contract](https://github.com/ton-blockchain/token-contract/tree/main)
-- [Wrappers](https://github.com/chainstacklabs/ton-nft-tutorial-1) from [TON: How to develop non-fungible tokens (NFT)](https://docs.chainstack.com/docs/ton-how-to-develop-non-fungible-tokens)
+- NFT Collection and Item contracts from GetGems are referenced in the .fc files
+- Wrappers updated for v2 were [based](https://github.com/YakovL/ton-nft) on [TON: How to develop non-fungible tokens (NFT)](https://docs.chainstack.com/docs/ton-how-to-develop-non-fungible-tokens)
