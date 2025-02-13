@@ -1,0 +1,3 @@
+;; adapted from https://github.com/getgems-io/nft-contracts/blob/main/packages/contracts/sources/op-codes.fc
+int op::get_royalty_params() asm "0x693d3950 PUSHINT";
+int op::report_royalty_params() asm "0xa8cb00ad PUSHINT";
