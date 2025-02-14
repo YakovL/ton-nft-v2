@@ -37,6 +37,11 @@ export class NFTCollection implements Contract {
                     .storeStringTail(content.uri)
                     .endCell()
             )
+            .storeRef(
+                beginCell()
+                    .storeStringTail("") // common content (TODO: test non-empty, with get_nft_content restored)
+                    .endCell()
+            )
             .endCell();
     }
 
