@@ -114,7 +114,9 @@ slice calculate_nft_item_address(int wc, cell state_init) {
   }
   if (op == 2) { ;; batch deploy of new nfts
     int counter = 0;
-    cell deploy_list = in_msg_body~load_ref();
+    ;; using load_ref caused stack underflow at use_next_item_index = in_msg_body~load_int(2);,
+    ;; presumably because dict is stored as maybe_ref: https://docs.ton.org/v3/documentation/smart-contracts/func/docs/dictionaries#hashmap
+    cell deploy_list = in_msg_body~load_dict();
     int use_next_item_index = 0;
     if (in_msg_body.slice_data_empty?() == false) {
       use_next_item_index = in_msg_body~load_int(2);
